@@ -1,0 +1,178 @@
+mysql> SELECT DISTINCT country, cust_name
+    -> FROM sales;
++-----------------+---------------------------+
+| country         | cust_name                 |
++-----------------+---------------------------+
+| 台南營一部      | Backwoods Equipment Pty   |
+| 台南營一部      | Vacation Central 1        |
+| 台南營一部      | OutBack Pty 1             |
+| 台南營一部      | OutBack Pty 2             |
+| 台南營一部      | OutBack Pty 3             |
+| 台南營一部      | OutBack Pty 4             |
+| 台中營一部      | Vacation Central 2        |
+| 台中營一部      | Wilderness Wonderment Ltd |
+| 台中營一部      | Rock Steady 4             |
+| 台中營一部      | Wally Mart 3              |
+| 高雄營二部      | Montreal.                 |
+| 高雄營二部      | Laperier Sportifs 5       |
+| 高雄營二部      | Supras Camping Supplies 3 |
+| 高雄營二部      | Vacation Central 4        |
+| 高雄營二部      | Supras Camping Supplies 5 |
+| 高雄營二部      | Andes Camping Supplies 1  |
+| 高雄營二部      | Andes Camping Supplies 3  |
+| 高雄營二部      | Clear Valley Waters 2     |
+| 高雄營二部      | Clear Valley Waters 3     |
+| 高雄營二部      | New Wave Wilderness 2     |
+| 高雄營二部      | Kay Mart 4                |
+| 高雄營二部      | Excellence en Montagne    |
+| 台中營三部      | Vacation Central 3        |
+| 台中營三部      | Paris                     |
+| 台中營三部      | Fresh Air Lte 4           |
+| 台中營二部      | Bergsteiger G.m.b.H.      |
+| 台中營二部      | Ultra Sports 3            |
+| 台中營二部      | Sportwaren G.m.b.H. 1     |
+| 台中營二部      | Sportwaren G.m.b.H. 2     |
+| 台中營二部      | Sportwaren G.m.b.H. 3     |
+| 台中營二部      | Supras Camping Supplies 8 |
+| 台中營二部      | Frankfurt                 |
+| 台南營三部      | Kay Mart 5                |
+| 台南營三部      | Ultra Sports 2            |
+| 台南營四部      | Botanechi K.K.            |
+| 台南營四部      | Botanechi K.K. 1          |
+| 高雄營四部      | Juan's Sports 3           |
+| 高雄營四部      | Over the Top Cycles 1     |
+| 高雄營四部      | Juan's Sports 1           |
+| 高雄營四部      | Juan's Sports 2           |
+| 台南營二部      | Singapore                 |
+| 台南營二部      | 123 Fitness PTE Ltd       |
+| 台中營四部      | Supremas Montagna 5       |
+| 台中營四部      | Ultra Sports 1            |
+| 台中營四部      | Supremas Montagna 1       |
+| 台中營四部      | Supremas Montagna 2       |
+| 台中營四部      | Supremas Montagna 3       |
+| 高雄營一部      | Kista AB                  |
+| 高雄營一部      | Tregoran AB 1             |
+| 高雄營一部      | Tregoran AB 2             |
+| 高雄營一部      | Over the Top Cycles 3 AB  |
+| 高雄營三部      | Fresh Air Co 5            |
+| 高雄營三部      | London                    |
+| 高雄營三部      | Trees to Seas Ltd         |
+| 高雄營三部      | Rock Steady 3             |
+| 高雄營三部      | Wally Mart 1              |
+| 高雄營三部      | Wally Mart 2              |
+| 高雄營三部      | Manchester                |
+| 高雄營三部      | Fresh Air Co 1            |
+| 高雄營三部      | Fresh Air Co 2            |
+| 高雄營三部      | Fresh Air Co 3            |
+| 高雄營五部      | Ultra Sports 5            |
+| 高雄營五部      | Mountain Madness 5        |
+| 高雄營五部      | Boston                    |
+| 高雄營五部      | Act'N'Up Fitness 5        |
+| 高雄營五部      | Desert Duds & Tees 8      |
+| 高雄營五部      | Clear Valley Waters 5     |
+| 高雄營五部      | Pro Form Supplies 5       |
+| 高雄營五部      | Fredies Sport Whse 5      |
+| 高雄營五部      | Supras Camping Supplies 2 |
+| 高雄營五部      | Ultra Sports 4            |
+| 高雄營五部      | Mountain Madness 1        |
+| 高雄營五部      | Mountain Madness 2        |
+| 高雄營五部      | Mountain Madness 3        |
+| 高雄營五部      | Lookout Below Ltd         |
+| 高雄營五部      | Advanced Climbing Ltd     |
+| 高雄營五部      | Irving                    |
+| 高雄營五部      | Seattle                   |
+| 高雄營五部      | Act'N'Up Fitness 1        |
+| 高雄營五部      | Act'N'Up Fitness 2        |
+| 高雄營五部      | Act'N'Up Fitness 3        |
+| 高雄營五部      | Act'N'Up Fitness 4        |
+| 高雄營五部      | Desert Duds & Tees 2      |
+| 高雄營五部      | Desert Duds & Tees 3      |
+| 高雄營五部      | Rock Steady 1             |
+| 高雄營五部      | Pro Form Supplies 3       |
+| 高雄營五部      | Pro Form Supplies 4       |
+| 高雄營五部      | Up and Up Co. 2           |
+| 高雄營五部      | Up and Up Co. 3           |
+| 高雄營五部      | Up and Up Co. 4           |
+| 高雄營五部      | New Wave Wilderness 1     |
+| 高雄營五部      | Miami                     |
+| 高雄營五部      | New York                  |
+| 高雄營五部      | Washington                |
+| 高雄營五部      | Hill Street Sports 1      |
+| 高雄營五部      | Hill Street Sports 2      |
+| 高雄營五部      | Hill Street Sports 3      |
+| 高雄營五部      | Hill Street Sports 4      |
+| 高雄營五部      | Fredies Sport Whse 1      |
+| 高雄營五部      | Florida Sun Sports 2      |
+| 高雄營五部      | Florida Sun Sports 3      |
+| 高雄營五部      | Denver                    |
++-----------------+---------------------------+
+
+
+mysql> SELECT country, COUNT(ord_qty) AS qty
+    -> FROM sales
+    -> GROUP BY country;
++-----------------+-----+
+| country         | qty |
++-----------------+-----+
+| 台南營一部      |  95 |
+| 台中營一部      |  40 |
+| 高雄營二部      | 127 |
+| 台中營三部      |  84 |
+| 台中營二部      |  78 |
+| 台南營三部      |  24 |
+| 台南營四部      |  23 |
+| 高雄營四部      |  42 |
+| 台南營二部      |  32 |
+| 台中營四部      |  50 |
+| 高雄營一部      |  56 |
+| 高雄營三部      | 128 |
+| 高雄營五部      | 343 |
++-----------------+-----+
+
+
+mysql> SELECT DISTINCT prod_type, prod_line
+    -> FROM sales
+    -> WHERE prod_type IN ('日用品');
++-----------+--------------+
+| prod_type | prod_line    |
++-----------+--------------+
+| 日用品    | 再生用品     |
+| 日用品    | 沐浴用品     |
+| 日用品    | 防曬油       |
+| 日用品    | 濾水器       |
+| 日用品    | 警報器       |
++-----------+--------------+
+
+
+mysql> SELECT DISTINCT prod_type, prod_line, pro_price
+    -> FROM sales
+    -> WHERE prod_type IN ('日用品')
+    -> ORDER BY pro_price ASC;
++-----------+--------------+-----------+
+| prod_type | prod_line    | pro_price |
++-----------+--------------+-----------+
+| 日用品    | 再生用品     |         6 |
+| 日用品    | 沐浴用品     |         6 |
+| 日用品    | 防曬油       |         6 |
+| 日用品    | 再生用品     |         7 |
+| 日用品    | 沐浴用品     |         8 |
+| 日用品    | 沐浴用品     |         9 |
+| 日用品    | 警報器       |         9 |
+| 日用品    | 防曬油       |         9 |
+| 日用品    | 警報器       |        10 |
+| 日用品    | 沐浴用品     |        11 |
+| 日用品    | 防曬油       |        11 |
+| 日用品    | 再生用品     |        12 |
+| 日用品    | 警報器       |        12 |
+| 日用品    | 再生用品     |        13 |
+| 日用品    | 沐浴用品     |        13 |
+| 日用品    | 警報器       |        13 |
+| 日用品    | 再生用品     |        30 |
+| 日用品    | 再生用品     |        33 |
+| 日用品    | 警報器       |        39 |
+| 日用品    | 警報器       |        43 |
+| 日用品    | 濾水器       |       165 |
+| 日用品    | 濾水器       |       190 |
+| 日用品    | 濾水器       |       270 |
+| 日用品    | 濾水器       |       311 |
++-----------+--------------+-----------+

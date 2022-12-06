@@ -1,0 +1,42 @@
+mysql> desc custome;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| Cust_Num  | int unsigned | YES  |     | NULL    |       |
+| Cust_Name | varchar(50)  | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+
+mysql> desc product;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| Prod_Type | varchar(20)  | YES  |     | NULL    |       |
+| Prod_Line | varchar(20)  | YES  |     | NULL    |       |
+| Prod_Name | varchar(20)  | YES  |     | NULL    |       |
+| Prod_Num  | int          | YES  |     | NULL    |       |
+| Pro_Price | int unsigned | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+
+mysql> desc sales_order;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| Ord_num  | int unsigned | NO   |     | NULL    |       |
+| Prod_Num | int          | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+
+mysql> desc sales_order_detail;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| Ord_num    | int unsigned | NO   |     | NULL    |       |
+| Cust_Num   | int unsigned | YES  |     | NULL    |       |
+| Prod_Num   | int          | YES  |     | NULL    |       |
+| Ord_Qty    | int          | YES  |     | NULL    |       |
+| amount     | float        | YES  |     | NULL    |       |
+| Country    | varchar(50)  | YES  |     | NULL    |       |
+| Order_Date | datetime     | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
